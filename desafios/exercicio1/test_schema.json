@@ -1,0 +1,133 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "eid",
+        "documentNumber",
+        "name",
+        "age",
+        "address",
+        "test"
+    ],
+    "properties": {
+        "eid": {
+            "$id": "#/properties/eid",
+            "type": "string",
+            "title": "The eid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "3e628a05-7a4a-4bf3-8770-084c11601a12"
+            ]
+        },
+        "documentNumber": {
+            "$id": "#/properties/documentNumber",
+            "type": "string",
+            "title": "The documentNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "42323235600"
+            ]
+        },
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Joseph"
+            ]
+        },
+        "age": {
+            "$id": "#/properties/age",
+            "type": "integer",
+            "title": "The age schema",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                32
+            ]
+        },
+        "address": {
+            "$id": "#/properties/address",
+            "type": "object",
+            "title": "The address schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "street",
+                "number",
+                "mailAddress"
+            ],
+            "properties": {
+                "street": {
+                    "$id": "#/properties/address/properties/street",
+                    "type": "string",
+                    "title": "The street schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "examples": [
+                        "St. Blue"
+                    ]
+                },
+                "number": {
+                    "$id": "#/properties/address/properties/number",
+                    "type": "integer",
+                    "title": "The number schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "examples": [
+                        3
+                    ]
+                },
+                "mailAddress": {
+                    "$id": "#/properties/address/properties/mailAddress",
+                    "type": "boolean",
+                    "title": "The mailAddress schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "examples": [
+                        true
+                    ]
+                }
+            }
+        },
+        "test": {
+            "$id": "#/properties/test",
+            "type": "object",
+            "title": "The test schema",
+            "description": "An explanation about the purpose of this instance.",
+            "required": [
+                "string",
+                "integer",
+                "boolean"
+            ],
+            "properties": {
+                "string": {
+                    "$id": "#/properties/test/properties/string",
+                    "type": "string",
+                    "title": "The string schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "examples": [
+                        "A string for test"
+                    ]
+                },
+                "integer": {
+                    "$id": "#/properties/test/properties/integer",
+                    "type": "integer",
+                    "title": "The integer schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "examples": [
+                        15
+                    ]
+                },
+                "boolean": {
+                    "$id": "#/properties/test/properties/boolean",
+                    "type": "boolean",
+                    "title": "The boolean schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "examples": [
+                        false
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import boto3
 from moto import mock_athena, mock_s3
 
-import exercicio_2.json_schema_to_hive as js_2_hive
+import json_schema_to_hive as js_2_hive
 
 @mock_athena
 @mock_s3
